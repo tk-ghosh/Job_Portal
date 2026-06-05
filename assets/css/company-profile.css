@@ -1,0 +1,105 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.company-profile {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.company-banner {
+  background: linear-gradient(135deg, #2196F3, #1976D2);
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.company-logo {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo i {
+  font-size: 3rem;
+  color: #2196F3;
+}
+
+.company-name {
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+}
+
+.company-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.company-stats span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.company-overview,
+.open-positions {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.company-overview h2,
+.open-positions h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.open-positions .job-item {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.open-positions .job-item:hover {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.apply-btn {
+  background: #2196F3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.apply-btn:hover { background: #1976D2; }
+
+@media (max-width: 768px) {
+  .company-info { flex-direction: column; text-align: center; }
+  .company-stats { justify-content: center; }
+  .job-item { flex-direction: column; text-align: center; gap: 10px; }
+}
